@@ -18,3 +18,9 @@ chrome.extension.onMessage.addListener(function(msg, sender, sendResponse) {
     }
 });
 
+$(document).ready(function () {
+    $("body").on("click","#btn-open-tellus",function(){
+        chrome.extension.sendMessage({action:'open_new_tab'});
+    })
+});
+

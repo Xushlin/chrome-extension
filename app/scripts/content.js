@@ -9,3 +9,9 @@ chrome.extension.onMessage.addListener(function(msg, sender, sendResponse) {
         $('#MyModal1').modal('show');
     }
 });
+
+$(document).ready(function () {
+    $("body").on("click","#btn-open-tellus",function(){
+        chrome.extension.sendMessage({action:'open_new_tab'});
+    })
+});

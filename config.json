@@ -1,0 +1,11 @@
+{
+  "userInfoUrl": "https://www.googleapis.com/plus/v1/people/me",
+  "userInfoNameField": "displayName",
+  "implicitGrantUrl": "https://accounts.google.com/o/oauth2/auth",
+  "logoutUrl": "https://accounts.google.com/logout",
+  "tokenInfoUrl": "https://www.googleapis.com/oauth2/v3/tokeninfo",
+  "clientId": "1083973431353-t0e1tk980jld2o2scnephgo7p35qqqqd.apps.googleusercontent.com",
+  "scopes": "https://www.googleapis.com/auth/userinfo.profile",
+  "logoutWarningSeconds": 60,
+  "autoReLogin": true
+}

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>Title</title>
+
+    <script src="//cdn.bootcss.com/jquery/3.1.1/jquery.min.js"></script>
+    <script src="//cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link href="//cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" rel="stylesheet">
+    <link href="//cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+
+    <style type="text/css">
+        .info-title {
+            color:black;
+            font-size: 20px;
+            display: block;
+            margin-bottom: 0px;
+        }
+        .info-title-sub {
+            color:gray;
+            font-size: 13px;
+        }
+        .info-field-title {
+            color:#5A5A5A;
+            font-size: 12px;
+            display: block;
+        }
+        .info-field {
+            color: black;
+            font-size: 15px;
+        }
+        .contact {
+            background-color: #32434F;
+            color: white;
+            font-size: 10px;
+            display: block;
+            padding: 15px;
+        }
+        .contact-address-title {
+            font-size: 12px;
+        }
+        .contact-address {
+            font-size: 12px;
+        }
+        .contact-info {
+            display: block;
+            font-size: 12px;
+        }
+        .col-md-5{
+            padding: 0;
+        }
+    </style>
+
+    <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyChclkHzG_gqZCKEILnfPbI_HFIrZV47hc&sensor=false">
+    </script>
+
+    <script>
+        function initialize()
+        {
+            var mapProp = {
+                center:new google.maps.LatLng(51.508742,-0.120850),
+                zoom:5,
+                mapTypeId:google.maps.MapTypeId.ROADMAP
+            };
+            var map=new google.maps.Map(document.getElementById("googleMap")
+                    ,mapProp);
+        }
+
+        google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+</head>
+<body style="background-color: #1b6d85">
+
+<!--<div id="MyModal1" class="modal fade" tabindex="-1" role="dialog">-->
+<div id="MyModal1">
+    <div class="modal-dialog" role="document">
+        <div>
+            <div class="row" style="background-color: white;min-width:640px; min-height: 400px;">
+                <div class="col-md-5">
+                     <div style="width: 100%;min-height: 150px; background-color:bisque;">
+                         <div id="googleMap" style="width:267px;height:150px;"></div>
+                     </div>
+                     <div class="contact" style="width: 100%;;min-height: 250px;">
+                         <label class="contact-address-title">Address</label>
+                         <label class="contact-address">Hollandargatan 13 111 36 Stockholm</label>
+                         <br/>
+                         <label class="contact-address-title">Kontaktuppgifter</label>
+                         <label class="contact-info">Växel</label>
+                         <label class="contact-info">info@ffcg.se</label>
+                         <label class="contact-info">08-410 600 00</label>
+                         <label class="contact-info">----</label>
+                         <label class="contact-info">Johan Pettersson (VD)</label>
+                         <label class="contact-info">johan.pettersson@ffcg.se</label>
+                         <label class="contact-info">+46 701 234 567</label>
+                     </div>
+                 </div>
+                <div class="col-md-7" style="padding-bottom: 0;">
+                    <div class="row" style="padding-top:20px; padding-left: 30px;padding-right: 30px;min-height: 352px;max-height: 352px;">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
+                        <label class="info-title">Forefront Consulting Group</label>
+                        <p class="info-title-sub" >Aktiebolag</p>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <span class="info-field-title"><b>Bransch</b></span>
+                                <label class="info-field">IT</label>
+                            </div>
+                            <div class="col-md-6">
+                                <span class="info-field-title"><b>Bransch</b></span>
+                                <label class="info-field">IT</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <span class="info-field-title"><b>Bransch</b></span>
+                                <label class="info-field">IT</label>
+                            </div>
+                            <div class="col-md-6">
+                                <span class="info-field-title"><b>Bransch</b></span>
+                                <label class="info-field">IT</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <span class="info-field-title"><b>Bransch</b></span>
+                                <label class="info-field">IT</label>
+                            </div>
+                            <div class="col-md-6">
+                                <span class="info-field-title"><b>Bransch</b></span>
+                                <label class="info-field">IT</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <span class="info-field-title"><b>Bransch</b></span>
+                                <label class="info-field">ITfdsfafsafs  fdfsfa  dsfsadf dsfsdfddddd  fdfsdfds </label>
+                            </div>
+                            <div class="col-md-6">
+                                <span class="info-field-title"><b>Bransch</b></span>
+                                <label class="info-field">IT</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <span style="width:136px;height:24px;font-size: 12px; color:#ffffff;background-color: #fe8211; float: right;margin-top:24px; ">
+                            <img style="padding: 5px" src="../../icons/tellus_logo_blue_16.png"/>
+                            ÖPPNA I TELLUS
+                        </span>
+                    </div>
+                </div>
+
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+<button id="btn">Show</button>
+</body>
+<script type="text/javascript">
+    $().ready(function(){
+        $("#btn").click( function() {
+            $('#MyModal1').modal('show');
+        });
+    });
+</script>
+</html>

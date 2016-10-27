@@ -1,0 +1,45 @@
+{
+  "name": "Tellus",
+  "version": "1.0.0",
+  "manifest_version": 2,
+  "description": "Tellus description",
+  "homepage_url": "http://www.ffcg.se/",
+  "icons": {
+    "16": "icons/tellus_logo_blue_16.png",
+    "48": "icons/tellus_logo_blue_48.png",
+    "128": "icons/tellus_logo_blue_128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["http://*/*","https://*/*"],
+      "js": ["app/vendors/jquery-3.1.1.min.js", "app/vendors/bootstrap.min.js", "app/scripts/content.js"],
+      "css": ["app/css/bootstrap-theme.min.css", "app/css/bootstrap.min.css"],
+      "all_frames": true
+    }
+  ],
+  "background": {
+    "scripts": [
+      "app/vendors/jquery-3.1.1.min.js",
+      "app/vendors/bootstrap.min.js",
+      "app/scripts/background.js"
+    ]
+  },
+  "options_page": "app/views/options.html",
+  "browser_action": {
+    "name": "Tell us name",
+    "default_title": "Tell us title",
+    "default_icon": "icons/tellus_logo_blue_16.png",
+    "default_popup": "app/views/popup.html"
+  },
+  "permissions": [
+    "identity",
+    "tabs",
+    "activeTab",
+    "contextMenus",
+    "notifications",
+    "storage",
+    "<all_urls>",
+    "http://*/"
+  ],
+  "update_url": "http://www.update.com/"
+}

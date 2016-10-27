@@ -1,20 +1,11 @@
-
 chrome.extension.onMessage.addListener(function(msg, sender, sendResponse) {
-    if (msg.action == 'open_dialog_box') {
-
+    if (msg.action == 'open_dialog') {
         var modal = document.createElement('div');
-        modal.innerHTML =msg.html;
+        modal.innerHTML = msg.html;
 
-        var tree = $(modal);
-
-        tree.appendTo($("body"));
+        var popup = $(modal);
+        popup.appendTo($("body"));
 
         $('#MyModal1').modal('show');
-
-        //setTimeout(function () {
-        //    $('#MyModal1').modal('show');
-        //    alert("OK");
-        //}, 3000);
     }
 });
-

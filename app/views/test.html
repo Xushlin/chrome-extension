@@ -1,13 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <title>Title</title>
-
     <script src="//cdn.bootcss.com/jquery/3.1.1/jquery.min.js"></script>
     <script src="//cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="//maps.googleapis.com/maps/api/js?key=AIzaSyChclkHzG_gqZCKEILnfPbI_HFIrZV47hc"></script>
     <link href="//cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" rel="stylesheet">
     <link href="//cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
 
@@ -53,9 +46,6 @@
         }
     </style>
 
-    <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyChclkHzG_gqZCKEILnfPbI_HFIrZV47hc&sensor=false">
-    </script>
-
     <script>
         function initialize()
         {
@@ -67,14 +57,11 @@
             var map=new google.maps.Map(document.getElementById("googleMap")
                     ,mapProp);
         }
-
         google.maps.event.addDomListener(window, 'load', initialize);
     </script>
 </head>
 <body style="background-color: #1b6d85">
-
-<!--<div id="MyModal1" class="modal fade" tabindex="-1" role="dialog">-->
-<div id="MyModal1">
+<div id="MyModal1" class="modal fade bs-example-modal" tabindex="-1" role="dialog">
     <div class="modal-dialog" role="document">
         <div>
             <div class="row" style="background-color: white;min-width:640px; min-height: 400px;">
@@ -151,16 +138,6 @@
                 </div>
 
             </div>
-        </div><!-- /.modal-content -->
-    </div><!-- /.modal-dialog -->
-</div><!-- /.modal -->
-<button id="btn">Show</button>
-</body>
-<script type="text/javascript">
-    $().ready(function(){
-        $("#btn").click( function() {
-            $('#MyModal1').modal('show');
-        });
-    });
-</script>
-</html>
+        </div>
+    </div>
+</div>

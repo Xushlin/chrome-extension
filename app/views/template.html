@@ -44,35 +44,17 @@
 
 <div id="ModalSearchResult" class="modal fade" tabindex="-1" role="dialog">
     <div class="modal-dialog" role="document">
-        <div class="list-group">
-            <a href="#" class="list-group-item">
-                <h4 class="list-group-item-heading">Search Result 1</h4>
-                <p class="list-group-item-text">A quick brown fox jump over the lazy dog.</p>
-            </a>
-        </div>
-        <div class="list-group">
-            <a href="#" class="list-group-item">
-                <h4 class="list-group-item-heading">Search Result 1</h4>
-                <p class="list-group-item-text">A quick brown fox jump over the lazy dog.</p>
-            </a>
-        </div>
-        <div class="list-group">
-            <a href="#" class="list-group-item">
-                <h4 class="list-group-item-heading">Search Result 1</h4>
-                <p class="list-group-item-text">A quick brown fox jump over the lazy dog.</p>
-            </a>
-        </div>
-        <div class="list-group">
-            <a href="#" class="list-group-item">
-                <h4 class="list-group-item-heading">Search Result 1</h4>
-                <p class="list-group-item-text">A quick brown fox jump over the lazy dog.</p>
-            </a>
-        </div>
-        <div class="list-group">
-            <a href="#" class="list-group-item">
-                <h4 class="list-group-item-heading">Search Result 1</h4>
-                <p class="list-group-item-text">A quick brown fox jump over the lazy dog.</p>
-            </a>
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h2 class="modal-title">Search Result</h2>
+            </div>
+            <div class="modal-body" id="ModalSearchResult-List">
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
         </div>
     </div>
 </div>
@@ -81,67 +63,71 @@
     <div class="modal-dialog" role="document">
         <div>
             <div class="row" style="background-color: white;min-width:640px; min-height: 400px;">
+                <label id="P1" hidden></label>
+                <label id="P2" hidden></label>
                 <div class="col-md-5">
                      <div style="width: 100%;min-height: 150px; background-color:#E5E3DF;">
                          <div id="googleMap" style="width:267px;height:150px;"></div>
                      </div>
                      <div class="contact" style="width: 100%;;min-height: 250px;">
                          <label class="contact-address-title">Address</label>
-                         <label class="contact-address">Hollandargatan 13 111 36 Stockholm</label>
+                         <label id="A1" class="contact-address">Hollandargatan 13 111 36 Stockholm</label>
                          <br/>
                          <label class="contact-address-title">Kontaktuppgifter</label>
-                         <label class="contact-info">Växel</label>
-                         <label class="contact-info">info@ffcg.se</label>
-                         <label class="contact-info">08-410 600 00</label>
+                         <label id="A2" class="contact-info">Växel</label>
+                         <label id="A3" class="contact-info">info@ffcg.se</label>
+                         <label id="A4" class="contact-info">08-410 600 00</label>
                          <label class="contact-info">----</label>
-                         <label class="contact-info">Johan Pettersson (VD)</label>
-                         <label class="contact-info">johan.pettersson@ffcg.se</label>
-                         <label class="contact-info">+46 701 234 567</label>
+                         <label id="A5" class="contact-info">Johan Pettersson (VD)</label>
+                         <label id="A6" class="contact-info">johan.pettersson@ffcg.se</label>
+                         <label id="A7" class="contact-info">+46 701 234 567</label>
                      </div>
                  </div>
                 <div class="col-md-7" style="padding-bottom: 0;">
                     <div class="row" style="padding-top:20px; padding-left: 30px;padding-right: 30px;min-height: 352px;max-height: 352px;">
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
-                        <label class="info-title">Forefront Consulting Group</label>
-                        <p class="info-title-sub" >Aktiebolag</p>
+                        <label id="M1" class="info-title">Forefront Consulting Group</label>
+                        <p id="M2" class="info-title-sub" >Aktiebolag</p>
                         <div class="row">
                             <div class="col-md-6">
                                 <span class="info-field-title"><b>Bransch</b></span>
-                                <label class="info-field">IT</label>
+                                <label id="M3" class="info-field">IT</label>
                             </div>
                             <div class="col-md-6">
-                                <span class="info-field-title"><b>Bransch</b></span>
-                                <label class="info-field">IT</label>
+                                <span class="info-field-title"><b>Medlemsorganisation</b></span>
+                                <label id="M4" class="info-field">Almega</label>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-md-6">
-                                <span class="info-field-title"><b>Bransch</b></span>
-                                <label class="info-field">IT</label>
+                                <span class="info-field-title"><b>Registreringsär</b></span>
+                                <label id="M5" class="info-field">2008</label>
                             </div>
                             <div class="col-md-6">
-                                <span class="info-field-title"><b>Bransch</b></span>
-                                <label class="info-field">IT</label>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-6">
-                                <span class="info-field-title"><b>Bransch</b></span>
-                                <label class="info-field">IT</label>
-                            </div>
-                            <div class="col-md-6">
-                                <span class="info-field-title"><b>Bransch</b></span>
-                                <label class="info-field">IT</label>
+                                <span class="info-field-title"><b>Medlem sedan</b></span>
+                                <label id="M6" class="info-field">2008-11-09</label>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-md-6">
-                                <span class="info-field-title"><b>Bransch</b></span>
-                                <label class="info-field">ITfdsfafsafs  fdfsfa  dsfsadf dsfsdfddddd  fdfsdfds </label>
+                                <span class="info-field-title"><b>Lönesumma (TKR)</b></span>
+                                <label id="M7" class="info-field">99 050</label>
                             </div>
                             <div class="col-md-6">
-                                <span class="info-field-title"><b>Bransch</b></span>
-                                <label class="info-field">IT</label>
+                                <span class="info-field-title"><b>Kollektivavtal</b></span>
+                                <label id="M8" class="info-field">Tjänstemannaavtalet Annat avtal</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <span class="info-field-title"><b>Anställda</b></span>
+                                <label id="M9" class="info-field">180</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <span class="info-field-title"><b>Storleksklass</b></span>
+                                <label id="M10" class="info-field">5</label>
                             </div>
                         </div>
                     </div>
@@ -160,7 +146,7 @@
 <script>
     function initialize() {
         var mapProp = {
-            center: new google.maps.LatLng(51.508742, -0.120850),
+            center:new google.maps.LatLng(51.508742,-0.120850),
             zoom: 5,
             mapTypeId: google.maps.MapTypeId.ROADMAP
         };

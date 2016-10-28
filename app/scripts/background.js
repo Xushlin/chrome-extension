@@ -1,13 +1,6 @@
 var clickHandler = function(e) {
     chrome.tabs.query({active: true, currentWindow: true}, function (tabs) {
-        var result = getSearchResult();
-        if (result === undefined || result === null) {
-            chrome.tabs.sendMessage(tabs[0].id, {action: "notification"});
-        } else if (result.length === 1) {
-            getHTMLTemplate(tabs, "dialog_companyInfo");
-        } else if (result.length > 1) {
-            getHTMLTemplate(tabs, "dialog_searchResult");
-        }
+        getSearchResult(e,tabs);
     });
 };
 
@@ -27,39 +20,32 @@ chrome.extension.onMessage.addListener(
     }
 );
 
-function getSearchResult() {
-    //return null;
-    return [{"title": "Search Result 1", "details": "1. A quick brown fox jump over the lazy dog."}];
-    //return [{"title": "Search Result 1", "details": "1. A quick brown fox jump over the lazy dog."},
-    //    {"title": "Search Result 2", "details": "2. A quick brown fox jump over the lazy dog."},
-    //    {"title": "Search Result 3", "details": "3. A quick brown fox jump over the lazy dog."},
-    //    {"title": "Search Result 4", "details": "4. A quick brown fox jump over the lazy dog."},
-    //    {"title": "Search Result 5", "details": "5. A quick brown fox jump over the lazy dog."}];
-
-    //$.ajax({
-    //    url: "",
-    //    type: "get",
-    //    success: function (result) {
-    //        //return null;
-    //        return [{"title": "Search Result 1", "details": "1. A quick brown fox jump over the lazy dog."}];
-    //        //return [{"title": "Search Result 1", "details": "1. A quick brown fox jump over the lazy dog."},
-    //        //    {"title": "Search Result 2", "details": "2. A quick brown fox jump over the lazy dog."},
-    //        //    {"title": "Search Result 3", "details": "3. A quick brown fox jump over the lazy dog."},
-    //        //    {"title": "Search Result 4", "details": "4. A quick brown fox jump over the lazy dog."},
-    //        //    {"title": "Search Result 5", "details": "5. A quick brown fox jump over the lazy dog."}];
-    //    },
-    //    error: function (err) {
-    //        console.log(err);
-    //    }
-    //})
+function getSearchResult(event,tabs) {
+    $.ajax({
+        url: "../../mock-result.json",
+        contentType:"application/json",
+        dataType:"json",
+        type: "get",
+        success: function (result) {
+            if (result === undefined || result === null) {
+                chrome.tabs.sendMessage(tabs[0].id, {action: "notification"});
+            } else {
+                getHTMLTemplate(tabs, "dialog_searchResult", result);
+            }
+        },
+        error: function (err) {
+            console.log(err);
+            chrome.tabs.sendMessage(tabs[0].id, {action: "notification"});
+        }
+    })
 };
 
-function getHTMLTemplate(tabs,action) {
+function getHTMLTemplate(tabs,action,result) {
     $.ajax({
         url: "app/views/template.html",
         type: "get",
-        success: function (result) {
-            chrome.tabs.sendMessage(tabs[0].id, {action: action, html: result});
+        success: function (schema) {
+            chrome.tabs.sendMessage(tabs[0].id, {action: action, html: schema, data: result});
         },
         error: function (err) {
             console.log(err);

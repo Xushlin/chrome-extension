@@ -11,9 +11,19 @@
   },
   "content_scripts": [
     {
-      "matches": ["http://*/*","https://*/*"],
-      "js": ["app/vendors/jquery-3.1.1.min.js", "app/vendors/bootstrap.min.js", "app/scripts/content.js"],
-      "css": ["app/css/bootstrap-theme.min.css", "app/css/bootstrap.min.css"],
+      "matches": [
+        "http://*/*",
+        "https://*/*"
+      ],
+      "js": [
+        "app/vendors/jquery-3.1.1.min.js",
+        "app/vendors/bootstrap.min.js",
+        "app/vendors/notify.min.js",
+        "app/scripts/content.js"
+      ],
+      "css": [
+        "app/css/bootstrap.min.css"
+      ],
       "all_frames": true
     }
   ],
@@ -21,6 +31,7 @@
     "scripts": [
       "app/vendors/jquery-3.1.1.min.js",
       "app/vendors/bootstrap.min.js",
+      "app/vendors/notify.min.js",
       "app/scripts/background.js"
     ]
   },

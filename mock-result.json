@@ -17,9 +17,10 @@
     "A5": "Johan Pettersson (VD)",
     "A6": "johan.pettersson@ffcg.se",
     "A7": "+46 701 234 567",
-    "P1": "50",
-    "P2": "10"
-  },{
+    "P1": "51.508742",
+    "P2": "-0.120850"
+  },
+  {
     "M1": "Forefront Consulting Group 2",
     "M2": "Aktebolag 2",
     "M3": "IT 2",
@@ -37,8 +38,8 @@
     "A5": "Johan Pettersson (VD) 2",
     "A6": "johan.pettersson@ffcg.se 2",
     "A7": "+46 701 234 567 2",
-    "P1": "35",
-    "P2": "-15"
+    "P1": "42.8",
+    "P2": "-2.4"
   }
 
 ]

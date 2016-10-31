@@ -70,8 +70,8 @@ function bindModal(company){
     $("#A6").text(company.A6);
     $("#A7").text(company.A7);
 
-    $("#P1").text(company.P1);
-    $("#P2").text(company.P2);
+    $("#P1").val(company.P1);
+    $("#P2").val(company.P2);
 }
 
 function showModal(){
@@ -89,5 +89,4 @@ $(document).ready(function () {
         bindModal(data[id]);
         showModal();
     })
-
 });

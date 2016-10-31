@@ -1,4 +1,4 @@
-<script src="//maps.googleapis.com/maps/api/js?key=AIzaSyChclkHzG_gqZCKEILnfPbI_HFIrZV47hc"></script>
+<script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyChclkHzG_gqZCKEILnfPbI_HFIrZV47hc"></script>
 
 <style type="text/css">
     .info-title {
@@ -63,8 +63,8 @@
     <div class="modal-dialog" role="document">
         <div>
             <div class="row" style="background-color: white;min-width:640px; min-height: 400px;">
-                <label id="P1" hidden></label>
-                <label id="P2" hidden></label>
+                <input type="text" id="P1" hidden />
+                <input type="text" id="P2" hidden />
                 <div class="col-md-5">
                      <div style="width: 100%;min-height: 150px; background-color:#E5E3DF;">
                          <div id="googleMap" style="width:267px;height:150px;"></div>
@@ -146,14 +146,19 @@
 <script>
     function initialize() {
         var mapProp = {
-            center:new google.maps.LatLng(51.508742,-0.120850),
+            center:new google.maps.LatLng(document.getElementById("P1").value,document.getElementById("P2").value),
             zoom: 5,
             mapTypeId: google.maps.MapTypeId.ROADMAP
         };
         new google.maps.Map(document.getElementById("googleMap"), mapProp);
     }
 
-    setTimeout(function () {
-        initialize();
-    }, 1500);
+    var setIntervalId= setInterval(function checkValue() {
+        if (document.getElementById("P1").value !== '' && document.getElementById("P2").value !== '') {
+            clearInterval(setIntervalId);
+            setTimeout(function () {
+                initialize();
+            }, 1500);
+        }
+    },1000);
 </script>

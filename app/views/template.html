@@ -1,5 +1,3 @@
-<script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyChclkHzG_gqZCKEILnfPbI_HFIrZV47hc"></script>
-
 <style type="text/css">
     .info-title {
         color:black;
@@ -153,7 +151,7 @@
         new google.maps.Map(document.getElementById("googleMap"), mapProp);
     }
 
-    var setIntervalId= setInterval(function checkValue() {
+    var setIntervalId = setInterval(function checkValue() {
         if (document.getElementById("P1").value !== '' && document.getElementById("P2").value !== '') {
             clearInterval(setIntervalId);
             setTimeout(function () {

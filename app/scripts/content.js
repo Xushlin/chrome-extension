@@ -1,9 +1,7 @@
 var data=null;
 chrome.extension.onMessage.addListener(function(msg, sender, sendResponse) {
     data=null;
-
     if (msg.action === "notification") {
-
         $.notify.addStyle('base', {
             html: "<div><span data-notify-text/></div>",
             classes: {
@@ -23,9 +21,18 @@ chrome.extension.onMessage.addListener(function(msg, sender, sendResponse) {
         });
     } else {
         var modal = document.createElement('div');
-        modal.innerHTML = msg.html;
+        modal.id = "tellus";
 
+        if ($("#tellus").length == 0) {
+            modal.innerHTML = "<script src='http://maps.googleapis.com/maps/api/js?key=AIzaSyChclkHzG_gqZCKEILnfPbI_HFIrZV47hc'></script>" + msg.html;
+        } else {
+            modal.innerHTML = msg.html;
+        }
+
+        //modal.innerHTML = msg.html;
+        //"<script src='http://maps.googleapis.com/maps/api/js?key=AIzaSyChclkHzG_gqZCKEILnfPbI_HFIrZV47hc'></script>"
         var popup = $(modal);
+        //<script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyChclkHzG_gqZCKEILnfPbI_HFIrZV47hc"></script>
         popup.appendTo($("body"));
 
         data = msg.data;

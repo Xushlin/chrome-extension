@@ -14,8 +14,8 @@ chrome.contextMenus.create({
 chrome.extension.onMessage.addListener(
     function(request, sender, sendResponse) {
         if (request.action === "open_new_tab") {
-            var newUrl = "http://www.google.com"
-            chrome.tabs.create({url: newUrl})
+            var newUrl = "http://www.google.com";
+            chrome.tabs.create({url: newUrl});
         }
     }
 );

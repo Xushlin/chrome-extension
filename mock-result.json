@@ -1,6 +1,6 @@
 [
   {
-    "M1": "Forefront Consulting Group 1",
+    "M1": "Forefront Consulting Group",
     "M2": "Aktebolag",
     "M3": "IT",
     "M4": "Almega",
@@ -17,11 +17,11 @@
     "A5": "Johan Pettersson (VD)",
     "A6": "johan.pettersson@ffcg.se",
     "A7": "+46 701 234 567",
-    "P1": "51.508742",
-    "P2": "-0.120850"
+    "P1": "59.3367468",
+    "P2": "18.0581281"
   },
   {
-    "M1": "Forefront Consulting Group 2",
+    "M1": "Shinetech China",
     "M2": "Aktebolag 2",
     "M3": "IT 2",
     "M4": "Almega 2",
@@ -31,15 +31,15 @@
     "M8": "Tjänstemannaavtalet Annat avtal 2",
     "M9": "180 2",
     "M10": "5 2",
-    "A1": "Hollandargatan 13 111 36 Stockholm 2",
+    "A1": "Xi'an",
     "A2": "Växel 2",
     "A3": "info@ffcg.se 2",
     "A4": "08-410 600 00 2",
     "A5": "Johan Pettersson (VD) 2",
     "A6": "johan.pettersson@ffcg.se 2",
     "A7": "+46 701 234 567 2",
-    "P1": "42.8",
-    "P2": "-2.4"
+    "P1": "34.2596292",
+    "P2": "108.687012"
   }
 
 ]

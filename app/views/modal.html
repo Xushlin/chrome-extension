@@ -23,7 +23,7 @@
         }
         #ModalSearchResult .content{
             max-height: 320px;
-            overflow-y: scroll;
+            overflow-y: auto;
         }
         .list-container {
             height: 80px;
@@ -308,6 +308,10 @@
         });
         $('body').on('click','#close-list-container',function(){
             $("#ModalSearchResult").hide();
+        })
+        $(document).bind("keydown", "esc", function (ev){
+            $("#ModalSearchResult").hide();
+            $("#ModalCompanyInfo").hide();
         })
     });
 </script>

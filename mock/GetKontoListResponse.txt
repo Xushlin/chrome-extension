@@ -1,0 +1,182 @@
+<GetKontoList>
+<MethodParameters>
+<KontoListResponse>
+<KontoArray>
+<KontoArray0>
+<KontoID>402c3f84-2967-e311-869a-005056b20fd4</KontoID>
+<JuridisktNamn>Forefront AB</JuridisktNamn>
+<MarknadsNamn>Forefront AB</MarknadsNamn>
+<Organisationsnummer>556790-5996</Organisationsnummer>
+<Medlemsnummer isNull="true"/>
+<Epost>marcus.jildecrona@forefrontmedia.se</Epost>
+<TelefonVaxel>+46706022060</TelefonVaxel>
+<Fax isNull="true"/>
+<Websida>http://www.forefront.eu</Websida>
+<VerkstallandeDirektorID>46ddfc93-d7d7-e511-a1f8-005056b20fd6</VerkstallandeDirektorID>
+<Utdelningsadress>
+<CareOf isNull="true"/>
+<Attention isNull="true"/>
+<Avdelning isNull="true"/>
+<Gatuadress>Kungsängsgatan 12 4Tr</Gatuadress>
+<Adress2 isNull="true"/>
+<Postnummer>753 22</Postnummer>
+<Postort>UPPSALA</Postort>
+<Lan>Uppsala län</Lan>
+<Kommun>
+<KommunID>711679fd-ff07-de11-b4e1-02bf9e69ca65</KommunID>
+<KommunNamn isNull="true"/>
+<Kommunkod isNull="true"/>
+</Kommun>
+<RegionStatProvins isNull="true"/>
+<LandID>162</LandID>
+<Land>Sverige</Land>
+<Latitud>0</Latitud>
+<Longitud>0</Longitud>
+</Utdelningsadress>
+<Faktureringsadress>
+<CareOf>Bankgirocentralen BGC AB</CareOf>
+<Attention isNull="true"/>
+<Avdelning isNull="true"/>
+<Gatuadress>FE 301, BGC id FRX5084</Gatuadress>
+<Adress2 isNull="true"/>
+<Postnummer>105 69</Postnummer>
+<Postort>STOCKHOLM</Postort>
+<Lan>Stockholms län</Lan>
+<Kommun>
+<KommunID>621679fd-ff07-de11-b4e1-02bf9e69ca65</KommunID>
+<KommunNamn>Stockholm</KommunNamn>
+<Kommunkod isNull="true"/>
+</Kommun>
+<RegionStatProvins isNull="true"/>
+<LandID>162</LandID>
+<Land>Sverige</Land>
+<Latitud>0</Latitud>
+<Longitud>0</Longitud>
+</Faktureringsadress>
+<PrimartArbetsstalleID>d9362a8b-2967-e311-869a-005056b20fd4</PrimartArbetsstalleID>
+<Kontaktmetod>
+<Epost>False</Epost>
+<Massutskick>False</Massutskick>
+<Telefon>False</Telefon>
+<Fax>False</Fax>
+<Post>False</Post>
+</Kontaktmetod>
+<Koncernmoder>00000000-0000-0000-0000-000000000000</Koncernmoder>
+<Foretagsgrupp>00000000-0000-0000-0000-000000000000</Foretagsgrupp>
+<AntalArbetare>0</AntalArbetare>
+<AntalOvriga>0</AntalOvriga>
+<TotaltAntalAnstallda>0</TotaltAntalAnstallda>
+<SenastModifierad>2016-03-31 09:59:32</SenastModifierad>
+<Egenskapskopplingar attr0="EgenskapskopplingArray"isNull="false"/>
+<Arbetsstallen attr0="ArbetsstalleArray"isNull="false"/>
+<MedlemskapArray/>
+<Lopnummer isNull="true"/>
+<PrimartArbetsstalle>UPPSALA, HK</PrimartArbetsstalle>
+<OnskadKontaktMetod>Valfri</OnskadKontaktMetod>
+<VerkstallandeDirektor>Jildecrona, Allan Marcus</VerkstallandeDirektor>
+<SNIkodID>012e819e-fc2b-e111-a309-005056b20277</SNIkodID>
+<SNIkodNamn>62020 Datakonsultverksamhet</SNIkodNamn>
+<AntalArbetareBransch>0</AntalArbetareBransch>
+<AntalOvrigaBransch>0</AntalOvrigaBransch>
+<TotaltAntalAnstalldaBransch>0</TotaltAntalAnstalldaBransch>
+<Status>Aktiv</Status>
+<Underkonton attr0="KontoArray"isNull="false"/>
+<KoncernmoderNamn isNull="true"/>
+<KontokategoriNamn>Företag</KontokategoriNamn>
+<KontokategoriID>1</KontokategoriID>
+<EpostPDFfaktura>inbox.lev.35585@arkivplats.se</EpostPDFfaktura>
+<ErReferensOrdernummer isNull="true"/>
+</KontoArray0>
+<KontoArray1>
+<KontoID>d50bd9c8-b8f6-de11-b925-02bf9e69ca65</KontoID>
+<JuridisktNamn>Forefront Consulting Group AB</JuridisktNamn>
+<MarknadsNamn>Forefront Consulting Group AB</MarknadsNamn>
+<Organisationsnummer>556755-2616</Organisationsnummer>
+<Medlemsnummer>1211465</Medlemsnummer>
+<Epost>info@ffcg.se</Epost>
+<TelefonVaxel>+46841060000</TelefonVaxel>
+<Fax isNull="true"/>
+<Websida>http://www.ffcg.se</Websida>
+<VerkstallandeDirektorID>05c46460-b9f6-de11-b925-02bf9e69ca65</VerkstallandeDirektorID>
+<Utdelningsadress>
+<CareOf isNull="true"/>
+<Attention isNull="true"/>
+<Avdelning isNull="true"/>
+<Gatuadress>Holländargatan 13</Gatuadress>
+<Adress2 isNull="true"/>
+<Postnummer>111 56</Postnummer>
+<Postort>STOCKHOLM</Postort>
+<Lan>Stockholms län</Lan>
+<Kommun>
+<KommunID>621679fd-ff07-de11-b4e1-02bf9e69ca65</KommunID>
+<KommunNamn isNull="true"/>
+<Kommunkod isNull="true"/>
+</Kommun>
+<RegionStatProvins isNull="true"/>
+<LandID>162</LandID>
+<Land>Sverige</Land>
+<Latitud>0</Latitud>
+<Longitud>0</Longitud>
+</Utdelningsadress>
+<Faktureringsadress>
+<CareOf isNull="true"/>
+<Attention isNull="true"/>
+<Avdelning isNull="true"/>
+<Gatuadress>Holländargatan 13</Gatuadress>
+<Adress2 isNull="true"/>
+<Postnummer>111 56</Postnummer>
+<Postort>STOCKHOLM</Postort>
+<Lan>Stockholms län</Lan>
+<Kommun>
+<KommunID>621679fd-ff07-de11-b4e1-02bf9e69ca65</KommunID>
+<KommunNamn>Stockholm</KommunNamn>
+<Kommunkod isNull="true"/>
+</Kommun>
+<RegionStatProvins isNull="true"/>
+<LandID>162</LandID>
+<Land>Sverige</Land>
+<Latitud>0</Latitud>
+<Longitud>0</Longitud>
+</Faktureringsadress>
+<PrimartArbetsstalleID>d60bd9c8-b8f6-de11-b925-02bf9e69ca65</PrimartArbetsstalleID>
+<Kontaktmetod>
+<Epost>False</Epost>
+<Massutskick>False</Massutskick>
+<Telefon>False</Telefon>
+<Fax>False</Fax>
+<Post>False</Post>
+</Kontaktmetod>
+<Koncernmoder>00000000-0000-0000-0000-000000000000</Koncernmoder>
+<Foretagsgrupp>00000000-0000-0000-0000-000000000000</Foretagsgrupp>
+<AntalArbetare>0</AntalArbetare>
+<AntalOvriga>0</AntalOvriga>
+<TotaltAntalAnstallda>0</TotaltAntalAnstallda>
+<SenastModifierad>2016-03-31 15:52:51</SenastModifierad>
+<Egenskapskopplingar attr0="EgenskapskopplingArray"isNull="false"/>
+<Arbetsstallen attr0="ArbetsstalleArray"isNull="false"/>
+<MedlemskapArray/>
+<Lopnummer isNull="true"/>
+<PrimartArbetsstalle>STOCKHOLM, HK</PrimartArbetsstalle>
+<OnskadKontaktMetod>Valfri</OnskadKontaktMetod>
+<VerkstallandeDirektor>Pettersson, Johan</VerkstallandeDirektor>
+<SNIkodID>312e819e-fc2b-e111-a309-005056b20277</SNIkodID>
+<SNIkodNamn>70220 Konsultverksamhet avseende företags organisation</SNIkodNamn>
+<AntalArbetareBransch>0</AntalArbetareBransch>
+<AntalOvrigaBransch>0</AntalOvrigaBransch>
+<TotaltAntalAnstalldaBransch>141</TotaltAntalAnstalldaBransch>
+<Status>Aktiv</Status>
+<Underkonton attr0="KontoArray"isNull="false"/>
+<KoncernmoderNamn isNull="true"/>
+<KontokategoriNamn>Företag</KontokategoriNamn>
+<KontokategoriID>1</KontokategoriID>
+<EpostPDFfaktura isNull="true"/>
+<ErReferensOrdernummer isNull="true"/>
+</KontoArray1>
+</KontoArray>
+<AntalRader>2</AntalRader>
+<ErrorCode>0</ErrorCode>
+<ErrorDescription isNull="false"/>
+<UserFriendlyErrorDescription isNull="false"/>
+</KontoListResponse>
+</MethodParameters>
+</GetKontoList>

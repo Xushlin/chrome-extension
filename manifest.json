@@ -30,6 +30,7 @@
   "background": {
     "scripts": [
       "app/vendors/jquery-3.1.1.min.js",
+      "app/vendors/xmlToJSON.min.js",
       "app/vendors/notify.min.js",
       "app/scripts/background.js"
     ]

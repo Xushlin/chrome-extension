@@ -7,7 +7,7 @@
 font-family: 'Lato-Regular';
 src:url('chrome-extension://__MSG_@@extension_id__/app/fonts/Lato-Regular.woff2');
 }
-#ModalSearchResult .title-container{
+#ModalSearchResult .tellus-title-container{
     color: white;
     height: 80px;
     background:  #32424F;
@@ -16,27 +16,29 @@ src:url('chrome-extension://__MSG_@@extension_id__/app/fonts/Lato-Regular.woff2'
     padding-left: 40px;
     padding-right:40px;
 }
-#ModalSearchResult .title-container .title{
+#ModalSearchResult .tellus-title-container .tellus-title{
     font-size: 34px;
 }
-#ModalSearchResult .content{
+#ModalSearchResult .tellus-tellus-content{
     max-height: 320px;
     overflow-y: auto;
 }
-.list-container {
+.tellus-list-container {
     height: 80px;
     line-height: 80px;
     vertical-align: middle;
     font-size: 34px;
     border-left: 8px solid white;
     border-bottom:1px solid #c7c7c7;
+    padding-right: 30px;
 }
-.list-container:hover{border-left:8px solid #f08200;}
+.tellus-list-container:hover{border-left:8px solid #f08200; }
 
 .tellus-search-result-item{
-    padding-left: 40px;
+    padding-left: 22px;
     font-weight:100;
-    float:left;
+    height: 80px;
+    /*float:left;*/
     display: inline;
     cursor: pointer;
     border-left: 8px solid white;
@@ -44,11 +46,11 @@ src:url('chrome-extension://__MSG_@@extension_id__/app/fonts/Lato-Regular.woff2'
 .tellus-open-detail {
     font-size: 20px;
     color: #C7C7C7;
-    padding-left: 500px;
+    float: right;
     cursor: pointer;
 }
-.list-container h4{display: none;}
-.list-container:hover h4{display: block;}
+.tellus-list-container .tellus-open-detail{display: none;}
+.tellus-list-container:hover .tellus-open-detail{display: block;}
 
 .tellus-close-list{
     font-size: 24px;
@@ -77,7 +79,6 @@ src:url('chrome-extension://__MSG_@@extension_id__/app/fonts/Lato-Regular.woff2'
     height: 560px;
     display: inline;
     float:left;
-    background-color: #1b6d85;
 }
 .tellus-right-container{
     width: 600px;
@@ -126,18 +127,18 @@ src:url('chrome-extension://__MSG_@@extension_id__/app/fonts/Lato-Regular.woff2'
     padding-left: 40px;
     padding-right: 40px;
 }
-#tellus-right-sub-content-container .content-row{
+#tellus-right-sub-content-container .tellus-content-row{
     min-height: 80px;
     padding-top: 8px;
 }
 
-#tellus-right-sub-content-container .content-row .left{
+#tellus-right-sub-content-container .tellus-content-row .tellus-left{
     min-height: 60px;
     width: 260px;
     display: inline;
     float: left;
 }
-#tellus-right-sub-content-container .content-row .right{
+#tellus-right-sub-content-container .tellus-content-row .tellus-right{
     min-height: 60px;
     width: 260px;
     display: inline;
@@ -151,36 +152,38 @@ src:url('chrome-extension://__MSG_@@extension_id__/app/fonts/Lato-Regular.woff2'
     background:#f08200;
     cursor:pointer ;
 }
-.info-title {
+.tellus-info-title {
     color:black;
     font-size: 30px;
     font-weight: bold;
     display: block;
     margin-bottom: -12px;
 }
-.info-title-sub {
+.tellus-info-title-sub {
     color:#C7C7C7;
     font-size: 20px;
 }
-.info-field-title {
+.tellus-info-field-title {
     color:#4B4B4B;
     font-size: 16px;
     display: block;
+    margin-bottom: 10px;
     font-weight: bold;
 }
-.info-field {
+.tellus-info-field {
     color: black;
     font-size: 24px;
 }
-.info-field-5{
+.tellus-info-field-5{
     color: black;
+    margin-top: 10px;
     font-size: 50px;
 }
-.contact-address-title {
+.tellus-contact-address-title {
     font-size: 16px;
     font-weight: bold;
 }
-.contact-info {
+.tellus-contact-info {
     display: block;
     font-size: 20px;
 }

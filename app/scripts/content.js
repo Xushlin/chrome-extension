@@ -39,14 +39,14 @@ chrome.extension.onMessage.addListener(function(msg, sender, sendResponse) {
         if (msg.action === 'dialog_searchResult' && data.length > 1) {
             var list = "";
             for (var i = 0; i < data.length; i++) {
-                var x="<div  id='" + i + "' class='list-container'>"+
-                        "<label class='tellus-search-result-item'>" + data[i].JuridisktNamn[0]._text + "</label>"+
-                        "<h4 class='tellus-open-detail'>Öppna</h4>"+
+                var x="<div  id='" + i + "' class='tellus-list-container'>"+
+                        "<span class='tellus-search-result-item'>" + data[i].JuridisktNamn[0]._text + "</span>"+
+                        "<span class='tellus-open-detail'>Öppna</span>"+
                         "</div>";
                 list += x;
             }
-            $(".content").children().remove();
-            $(".content").append($(list));
+            $("#ModalSearchResult .tellus-content").children().remove();
+            $("#ModalSearchResult .tellus-content").append($(list));
             $("#ModalSearchResult").show();
         } else {
             bindModal(data[0]);
@@ -88,7 +88,7 @@ $(document).ready(function () {
         chrome.extension.sendMessage({action: 'open_new_tab'});
     })
 
-    $("body").on("click", ".list-container", function () {
+    $("body").on("click", ".tellus-list-container", function () {
      var id=$(this).attr("id");
         $('#ModalSearchResult').hide();
         bindModal(data[id]);

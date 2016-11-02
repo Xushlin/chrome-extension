@@ -1,100 +1,99 @@
-<body>
-    <button type="button" id="open-dialog">Open Dialog</button>
-    <button type="button" id="open-list-dialog">Open list Dialog</button>
-    <div id="ModalSearchResult" class="tellus-modal"  style="display:none">
-        <div class="tellus-list-modal-wrapper">
-            <div class="title-container">
-                <span class="title">2 Content</span> <div id="close-list-container" class="tellus-close-list">X</div>
-            </div>
-            <div class="content">
-                <!--<div class="list-container">-->
-                    <!--<label class="tellus-search-result-item">Forefront Consult Group 1</label>-->
-                    <!--<label class="tellus-open-detail">Öppna</label>-->
-                <!--</div>-->
-            </div>
+<button type="button" id="open-dialog">Open Dialog</button>
+<button type="button" id="open-list-dialog">Open list Dialog</button>
+<div id="ModalSearchResult" class="tellus-modal"  style="display:none">
+    <div class="tellus-list-modal-wrapper">
+        <div class="title-container">
+            <span class="title">2 Content</span> <div id="close-list-container" class="tellus-close-list">X</div>
+        </div>
+        <div class="content">
+            <!--<div class="list-container">-->
+                <!--<label class="tellus-search-result-item">Forefront Consult Group 1</label>-->
+                <!--<label class="tellus-open-detail">Öppna</label>-->
+            <!--</div>-->
         </div>
     </div>
+</div>
 
-    <div id="ModalCompanyInfo" class="tellus-modal" style="display:none">
-        <input type="text" id="P1" hidden />
-        <input type="text" id="P2" hidden />
-        <input type="text" id="tellus-refresh-flag" value=true hidden />
-       <div class="tellus-modal-wrapper">
-           <div class="tellus-left-container">
-                <div class="tellus-left-top">
-                    <div id="googleMap" style="width:340px;height:220px;"></div>
+<div id="ModalCompanyInfo" class="tellus-modal" style="display:none">
+   <input type="text" id="P1" hidden />
+   <input type="text" id="P2" hidden />
+   <input type="text" id="tellus-refresh-flag" value=true hidden />
+   <div class="tellus-modal-wrapper">
+       <div class="tellus-left-container">
+            <div class="tellus-left-top">
+                <div id="googleMap" style="width:340px;height:220px;"></div>
+            </div>
+            <div class="tellus-left-bottom">
+                <span class="contact-address-title">Address</span>
+                <span id="A1" class="contact-info">Hollandargatan 13 111 36 Stockholm</span>
+                <br/>
+                <span class="contact-address-title">Kontaktuppgifter</span>
+                <span id="A2" class="contact-info">Växel</span>
+                <span id="A3" class="contact-info">info@ffcg.se</span>
+                <span id="A4" class="contact-info">08-410 600 00</span>
+                <span class="contact-info">----</span>
+                <span id="A5" class="contact-info">Johan Pettersson (VD)</span>
+                <span id="A6" class="contact-info">johan.pettersson@ffcg.se</span>
+                <span id="A7" class="contact-info">+46 701 234 567</span>
+            </div>
+       </div>
+       <div class="tellus-right-container">
+            <div id="tellus-right-sub-top-container">
+                <div id="company">
+                    <label id="M1" class="info-title">Forefront Consulting Group</label>
+                    <p id="M2" class="info-title-sub" >Aktiebolag</p>
                 </div>
-                <div class="tellus-left-bottom">
-                    <span class="contact-address-title">Address</span>
-                    <span id="A1" class="contact-info">Hollandargatan 13 111 36 Stockholm</span>
-                    <br/>
-                    <span class="contact-address-title">Kontaktuppgifter</span>
-                    <span id="A2" class="contact-info">Växel</span>
-                    <span id="A3" class="contact-info">info@ffcg.se</span>
-                    <span id="A4" class="contact-info">08-410 600 00</span>
-                    <span class="contact-info">----</span>
-                    <span id="A5" class="contact-info">Johan Pettersson (VD)</span>
-                    <span id="A6" class="contact-info">johan.pettersson@ffcg.se</span>
-                    <span id="A7" class="contact-info">+46 701 234 567</span>
-                </div>
-           </div>
-           <div class="tellus-right-container">
-                <div id="tellus-right-sub-top-container">
-                    <div id="company">
-                        <label id="M1" class="info-title">Forefront Consulting Group</label>
-                        <p id="M2" class="info-title-sub" >Aktiebolag</p>
+                <div id="close-container">X</div>
+            </div>
+            <div id="tellus-right-sub-content-container">
+                <div class="content-row">
+                    <div class="left">
+                        <span class="info-field-title">Bransch</span>
+                        <label id="M3" class="info-field">IT</label>
                     </div>
-                    <div id="close-container">X</div>
-                </div>
-                <div id="tellus-right-sub-content-container">
-                    <div class="content-row">
-                        <div class="left">
-                            <span class="info-field-title">Bransch</span>
-                            <label id="M3" class="info-field">IT</label>
-                        </div>
-                        <div class="right">
-                            <span class="info-field-title"><b>Medlemsorganisation</b></span>
-                            <label id="M4" class="info-field">Almega</label>
-                        </div>
-                    </div>
-                    <div class="content-row">
-                        <div class="left">
-                            <span class="info-field-title"><b>Registreringsär</b></span>
-                            <label id="M5" class="info-field">2008</label>
-                        </div>
-                        <div class="right">
-                            <span class="info-field-title"><b>Medlem sedan</b></span>
-                            <label id="M6" class="info-field">2008-11-09</label>
-                        </div>
-                    </div>
-                    <div class="content-row">
-                        <div class="left">
-                            <span class="info-field-title"><b>Lönesumma (TKR)</b></span>
-                            <label id="M7" class="info-field">99 050</label>
-                        </div>
-                        <div class="right">
-                            <span class="info-field-title"><b>Kollektivavtal</b></span>
-                            <label id="M8" class="info-field">Tjänstemannaavtalet Annat avtal</label>
-                        </div>
-                    </div>
-                    <div class="content-row">
-                        <div class="left">
-                            <span class="info-field-title"><b>Anställda</b></span>
-                            <label id="M9" class="info-field">180</label>
-                        </div>
-                        <div class="right">
-                            <span class="info-field-title"><b>Storleksklass</b></span>
-                            <label id="M10" class="info-field">5</label>
-                        </div>
+                    <div class="right">
+                        <span class="info-field-title"><b>Medlemsorganisation</b></span>
+                        <label id="M4" class="info-field">Almega</label>
                     </div>
                 </div>
-                    <div id="open-tellus">
-                        <img style="padding-left:40px;" src="../../icons/tellus_logo_blue_48.png"/>
-                        <label style="font-size: 20px;color:white;padding-left:20px;padding-top:30px;cursor: pointer">ÖPPNA I TELLUS</label>
+                <div class="content-row">
+                    <div class="left">
+                        <span class="info-field-title"><b>Registreringsär</b></span>
+                        <label id="M5" class="info-field">2008</label>
                     </div>
-           </div>
+                    <div class="right">
+                        <span class="info-field-title"><b>Medlem sedan</b></span>
+                        <label id="M6" class="info-field">2008-11-09</label>
+                    </div>
+                </div>
+                <div class="content-row">
+                    <div class="left">
+                        <span class="info-field-title"><b>Lönesumma (TKR)</b></span>
+                        <label id="M7" class="info-field">99 050</label>
+                    </div>
+                    <div class="right">
+                        <span class="info-field-title"><b>Kollektivavtal</b></span>
+                        <label id="M8" class="info-field">Tjänstemannaavtalet Annat avtal</label>
+                    </div>
+                </div>
+                <div class="content-row">
+                    <div class="left">
+                        <span class="info-field-title"><b>Anställda</b></span>
+                        <label id="M9" class="info-field">180</label>
+                    </div>
+                    <div class="right">
+                        <span class="info-field-title"><b>Storleksklass</b></span>
+                        <label id="M10" class="info-field">5</label>
+                    </div>
+                </div>
+            </div>
+                <div id="open-tellus">
+                    <img style="padding-left:40px;" src="../../icons/tellus_logo_blue_48.png"/>
+                    <label style="font-size: 20px;color:white;padding-left:20px;padding-top:30px;cursor: pointer">ÖPPNA I TELLUS</label>
+                </div>
+       </div>
     </div>
-   </div>
+</div>
 
 <script>
     $(document).ready(function () {

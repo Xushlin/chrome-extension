@@ -23,15 +23,21 @@ chrome.extension.onMessage.addListener(
 
 function getSearchResult(event,tabs) {
     $.ajax({
-        url: "../../mock-result.json",
-        contentType:"application/json",
-        dataType:"json",
+        url: "../mock/GetKontoListResponse.txt",
+        contentType:"text/plain",
+        dataType:"text",
         type: "get",
         success: function (result) {
             if (result === undefined || result === null) {
                 chrome.tabs.sendMessage(tabs[0].id, {action: "notification"});
             } else {
-                getHTMLTemplate(tabs, "dialog_searchResult", result);
+                var res=(xmlToJSON.parseString(result))["GetKontoList"][0]["MethodParameters"][0]["KontoListResponse"][0]["KontoArray"][0];
+                var resArray=new Array();
+                for(var propName in res){
+                    resArray.push(res[propName][0]);
+                }
+
+                getHTMLTemplate(tabs, "dialog_searchResult", resArray);
             }
         },
         error: function (err) {
@@ -51,9 +57,13 @@ function getCompanyInformation(event,tabs) {
             if (result === undefined || result === null) {
                 chrome.tabs.sendMessage(tabs[0].id, {action: "notification"});
             } else {
-                var res= xmlToJSON.parseString(result);
-                console.log(res);
-                //getHTMLTemplate(tabs, "dialog_searchResult", result);
+                var res=(xmlToJSON.parseString(result)).GetKontoList[0].MethodParameters[0].KontoListResponse[0].KontoArray[0]
+                var resArray=new Array();
+                for(var propName in res){
+                    resArray.push(res[propName][0]);
+                }
+
+                getHTMLTemplate(tabs, "dialog_searchResult", resArray);
             }
         },
         error: function (err) {

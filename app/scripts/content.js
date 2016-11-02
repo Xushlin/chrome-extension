@@ -36,11 +36,12 @@ chrome.extension.onMessage.addListener(function(msg, sender, sendResponse) {
             popup.appendTo($("body"));
         }
         data = msg.data;
+        console.log(msg.data);
         if (msg.action === 'dialog_searchResult' && data.length > 1) {
             var list = "";
             for (var i = 0; i < data.length; i++) {
                 var x="<div  id='" + i + "' class='list-container'>"+
-                        "<label class='tellus-search-result-item'>" + data[i]["M1"] + "</label>"+
+                        "<label class='tellus-search-result-item'>" + data[i].JuridisktNamn[0]._text + "</label>"+
                         "<h4 class='tellus-open-detail'>Öppna</h4>"+
                         "</div>";
                 list += x;
@@ -55,28 +56,28 @@ chrome.extension.onMessage.addListener(function(msg, sender, sendResponse) {
     }
 });
 
-function bindModal(companyInfo){
-    $("#M1").text(companyInfo.M1);
-    $("#M2").text(companyInfo.M2);
-    $("#M3").text(companyInfo.M3);
-    $("#M4").text(companyInfo.M4);
-    $("#M5").text(companyInfo.M5);
-    $("#M6").text(companyInfo.M6);
-    $("#M7").text(companyInfo.M7);
-    $("#M8").text(companyInfo.M8);
-    $("#M9").text(companyInfo.M9);
-    $("#M10").text(companyInfo.M10);
+function bindModal(company){
+    $("#M1").text(company.JuridisktNamn[0]._text);
+    $("#M2").text(company.M2);
+    $("#M3").text(company.M3);
+    $("#M4").text(company.M4);
+    $("#M5").text(company.M5);
+    $("#M6").text(company.M6);
+    $("#M7").text(company.M7);
+    $("#M8").text(company.M8);
+    $("#M9").text(company.M9);
+    $("#M10").text(company.M10);
 
-    $("#A1").text(companyInfo.A1);
-    $("#A2").text(companyInfo.A2);
-    $("#A3").text(companyInfo.A3);
-    $("#A4").text(companyInfo.A4);
-    $("#A5").text(companyInfo.A5);
-    $("#A6").text(companyInfo.A6);
-    $("#A7").text(companyInfo.A7);
+    $("#A1").text(company.Utdelningsadress[0].Gatuadress[0]._text + " " + company.Utdelningsadress[0].Postnummer[0]._text + " " + company.Utdelningsadress[0].Postort[0]._text);
+    $("#A2").text(company.A2);
+    $("#A3").text(company.Epost[0]._text);
+    $("#A4").text(company.TelefonVaxel[0]._text);
+    $("#A5").text(company.A5);
+    $("#A6").text(company.EpostPDFfaktura[0]._text);
+    $("#A7").text(company.A7);
 
-    $("#P1").val(companyInfo.P1);
-    $("#P2").val(companyInfo.P2);
+    $("#P1").val(company.P1);
+    $("#P2").val(company.P2);
 }
 
 function showModal(){

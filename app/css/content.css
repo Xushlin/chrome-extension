@@ -28,11 +28,10 @@
     line-height: 80px;
     vertical-align: middle;
     font-size: 34px;
+    border-left: 8px solid white;
     border-bottom:1px solid #c7c7c7;
 }
-.list-container :hover{
-    border-left:8px solid #f08200;
-}
+.list-container:hover{border-left:8px solid #f08200;}
 
 .tellus-search-result-item{
     padding-left: 40px;
@@ -42,14 +41,17 @@
     cursor: pointer;
     border-left: 8px solid white;
 }
-.tellus-open-detail{
+.tellus-open-detail {
     font-size: 20px;
     color: #C7C7C7;
-    padding-right: 20px;
-    float: right;
-    display: inline;
+    /*padding-right: 20px;*/
+    padding-left: 500px;
+    /*float: right;*/
     cursor: pointer;
 }
+.list-container h4{display: none;}
+.list-container:hover h4{display: block;}
+
 .tellus-btn_close{
     background-image: url(../../icons/Cross.png);
     background-repeat: no-repeat;

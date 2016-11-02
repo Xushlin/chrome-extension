@@ -41,7 +41,7 @@ chrome.extension.onMessage.addListener(function(msg, sender, sendResponse) {
             for (var i = 0; i < data.length; i++) {
                 var x="<div  id='" + i + "' class='list-container'>"+
                         "<label class='tellus-search-result-item'>" + data[i]["M1"] + "</label>"+
-                        "<label class='tellus-open-detail'>Öppna</label>"+
+                        "<h4 class='tellus-open-detail'>Öppna</h4>"+
                         "</div>";
                 list += x;
             }

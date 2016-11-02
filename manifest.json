@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "manifest_version": 2,
   "web_accessible_resources": [
-    "icons/*"
+    "icons/*","app/fonts/*"
   ],
   "description": "Tellus description",
   "homepage_url": "http://www.ffcg.se/",

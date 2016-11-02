@@ -71,6 +71,7 @@
 .tellus-modal {
     position: fixed;left: 0;top: 0;right: 0;bottom: 0;background: rgba(0,0,0,.5);
     font-family: 'Lato-Regular';
+    z-index: 999999999;
 }
 .tellus-list-modal-wrapper {
     margin: 50px auto; width: 600px;min-height: 240px;
@@ -186,4 +187,25 @@
 .contact-info {
     display: block;
     font-size: 20px;
+}
+.open-tellus-icon{
+    background: url('chrome-extension://__MSG_@@extension_id__/icons/tellus_logo_blue_48.png');
+    width: 48px;
+    height: 48px;
+    margin-left: 40px;
+    margin-top: 20px;
+    background-repeat: no-repeat;
+    border: none;
+    float: left;
+}
+.open-tellus-text{
+    font-size: 20px;
+    line-height: 48px;
+    float: right;
+    vertical-align: middle;
+    color: white;
+    padding-left: 20px;
+    margin-top: 20px;
+    margin-right: 20px;
+    cursor: pointer;
 }

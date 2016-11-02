@@ -137,7 +137,7 @@
 }
 #tellus-right-sub-content-container .content-row{
     min-height: 80px;
-    padding-top: 20px;
+    padding-top: 8px;
 }
 
 #tellus-right-sub-content-container .content-row .left{
@@ -162,7 +162,8 @@
 }
 .info-title {
     color:black;
-    font-size: 34px;
+    font-size: 30px;
+    font-weight: bold;
     display: block;
     margin-bottom: -12px;
 }
@@ -179,6 +180,10 @@
 .info-field {
     color: black;
     font-size: 24px;
+}
+.info-field-5{
+    color: black;
+    font-size: 50px;
 }
 .contact-address-title {
     font-size: 16px;

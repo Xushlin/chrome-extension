@@ -3,10 +3,10 @@
     font-family: 'Lato-Regular', serif;
 }
 
-/*@font-face {*/
-/*font-family: 'Lato-Regular';*/
-/*src:url(../fonts/Lato-Regular.woff2);*/
-/*}*/
+@font-face {
+font-family: 'Lato-Regular';
+src:url('chrome-extension://__MSG_@@extension_id__/app/fonts/Lato-Regular.woff2');
+}
 #ModalSearchResult .title-container{
     color: white;
     height: 80px;

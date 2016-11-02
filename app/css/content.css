@@ -21,7 +21,7 @@
 }
 #ModalSearchResult .content{
     max-height: 320px;
-    overflow-y: scroll;
+    overflow-y: auto;
 }
 .list-container {
     height: 80px;

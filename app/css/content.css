@@ -1,6 +1,6 @@
 #ModalSearchResult, #ModalCompanyInfo {
     text-align: left;
-    font-family: 'Lato-Regular';
+    font-family: 'Lato-Regular', serif;
 }
 
 /*@font-face {*/
@@ -44,21 +44,12 @@
 .tellus-open-detail {
     font-size: 20px;
     color: #C7C7C7;
-    /*padding-right: 20px;*/
     padding-left: 500px;
-    /*float: right;*/
     cursor: pointer;
 }
 .list-container h4{display: none;}
 .list-container:hover h4{display: block;}
 
-.tellus-btn_close{
-    background-image: url(../../icons/Cross.png);
-    background-repeat: no-repeat;
-    background-color: black;
-    padding-top: 30px;
-    padding-right: 40px;
-}
 .tellus-close-list{
     font-size: 24px;
     height: 80px;
@@ -70,7 +61,7 @@
 
 .tellus-modal {
     position: fixed;left: 0;top: 0;right: 0;bottom: 0;background: rgba(0,0,0,.5);
-    font-family: 'Lato-Regular';
+    font-family: 'Lato-Regular', serif;
     z-index: 999999999;
 }
 .tellus-list-modal-wrapper {

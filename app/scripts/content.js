@@ -94,4 +94,22 @@ $(document).ready(function () {
         bindModal(data[id]);
         showModal();
     })
+
+    $('body').on('click','#open-dialog',function(){
+        $("#ModalCompanyInfo").show();
+    });
+    $('body').on('click','#close-container',function(){
+        $("#ModalCompanyInfo").hide();
+    });
+
+    $('body').on('click','#open-list-dialog',function(){
+        $("#ModalSearchResult").show();
+    });
+    $('body').on('click','#close-list-container',function(){
+        $("#ModalSearchResult").hide();
+    })
+    $(document).bind("keydown", "esc", function (ev){
+        $("#ModalSearchResult").hide();
+        $("#ModalCompanyInfo").hide();
+    })
 });

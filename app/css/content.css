@@ -1,0 +1,177 @@
+#ModalSearchResult, #ModalCompanyInfo {
+    text-align: left;
+    font-family: 'Lato-Regular';
+}
+
+/*@font-face {*/
+/*font-family: 'Lato-Regular';*/
+/*src:url(../fonts/Lato-Regular.woff2);*/
+/*}*/
+#ModalSearchResult .title-container{
+    color: white;
+    height: 80px;
+    background:  #32424F;
+    vertical-align: middle;
+    line-height: 80px;
+    padding-left: 40px;
+    padding-right:40px;
+}
+#ModalSearchResult .title-container .title{
+    font-size: 34px;
+}
+#ModalSearchResult .content{
+    max-height: 320px;
+    overflow-y: scroll;
+}
+.list-container {
+    height: 80px;
+    line-height: 80px;
+    vertical-align: middle;
+    font-size: 34px;
+    border-left: 8px solid  white;
+}
+.list-container :hover{
+    border-left-color:  #f08200;
+    border-left-style: solid;
+}
+
+.tellus-search-result-item{
+    padding-left: 40px;
+    font-weight:100;
+}
+.tellus-open-detail{
+    font-size: 20px;
+    color: #C7C7C7;
+    padding-right: 20px;
+    float: right;
+    display: inline;
+    cursor: pointer;
+}
+.tellus-close-list{
+    font-size: 24px;
+    height: 80px;
+    width: 20px;
+    display: inline;
+    float: right;
+    cursor: pointer;
+}
+
+.tellus-modal {
+    position: fixed;left: 0;top: 0;right: 0;bottom: 0;background: rgba(0,0,0,.5);
+    font-family: 'Lato-Regular';
+}
+.tellus-list-modal-wrapper {
+    margin: 50px auto; width: 600px;min-height: 240px;
+    border: 0;background: white;box-shadow: 2px 3px 8px black;
+}
+.tellus-modal-wrapper {
+    margin: 50px auto; width: 940px;height: 560px;
+    border: 0;background: white;box-shadow: 2px 3px 8px black;
+}
+.tellus-left-container{
+    width: 340px;
+    height: 560px;
+    display: inline;
+    float:left;
+    background-color: #1b6d85;
+}
+.tellus-right-container{
+    width: 600px;
+    height: 520px;
+    display: inline;
+    float:right;
+    background-color: white;
+    padding-top: 40px;
+    padding-bottom: 0;
+}
+.tellus-left-top{
+    width: 340px;
+    height: 220px;
+    background-color: white;
+}
+.tellus-left-bottom{
+    width: 300px;
+    height: 300px;
+    background-color: #32424F;
+    padding: 20px;
+    color: white;
+}
+#tellus-right-sub-top-container{
+    height: 60px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+#tellus-right-sub-top-container #company{
+    width: 500px;
+    height: 60px;
+    display: inline;
+    float: left;
+}
+#tellus-right-sub-top-container #close-container{
+    width: 20px;
+    height: 60px;
+    text-align: center;
+    display: inline;
+    float: right;
+    cursor: pointer;
+    font-size: 23px;
+    padding-top: 10px;
+}
+#tellus-right-sub-content-container{
+    height: 380px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+#tellus-right-sub-content-container .content-row{
+    min-height: 80px;
+    padding-top: 20px;
+}
+
+#tellus-right-sub-content-container .content-row .left{
+    min-height: 60px;
+    width: 260px;
+    display: inline;
+    float: left;
+}
+#tellus-right-sub-content-container .content-row .right{
+    min-height: 60px;
+    width: 260px;
+    display: inline;
+    float: right;
+}
+#open-tellus{
+    height: 80px;
+    width: 300px;
+    display: inline;
+    float: right;
+    background:#f08200;
+    cursor:pointer ;
+}
+.info-title {
+    color:black;
+    font-size: 34px;
+    display: block;
+    margin-bottom: -12px;
+}
+.info-title-sub {
+    color:#C7C7C7;
+    font-size: 20px;
+}
+.info-field-title {
+    color:#4B4B4B;
+    font-size: 16px;
+    display: block;
+    font-weight: bold;
+}
+.info-field {
+    color: black;
+    font-size: 24px;
+}
+.contact-address-title {
+    font-size: 16px;
+    font-weight: bold;
+}
+.contact-info {
+    display: block;
+    font-size: 20px;
+}

@@ -42,7 +42,7 @@ function getSearchResult(event,tabs) {
 
 function getHTMLTemplate(tabs,action,result) {
     $.ajax({
-        url: "app/views/template.html",
+        url: "app/views/modal.html",
         type: "get",
         success: function (schema) {
             chrome.tabs.sendMessage(tabs[0].id, {action: action, html: schema, data: result});

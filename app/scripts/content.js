@@ -36,7 +36,6 @@ chrome.extension.onMessage.addListener(function(msg, sender, sendResponse) {
             popup.appendTo($("body"));
         }
         data = msg.data;
-        console.log(msg.data);
         if (msg.action === 'dialog_searchResult' && data.length > 1) {
             var list = "";
             for (var i = 0; i < data.length; i++) {
@@ -76,8 +75,7 @@ function bindModal(company){
     $("#A6").text(company.EpostPDFfaktura[0]._text);
     $("#A7").text(company.A7);
 
-    $("#P1").val(company.P1);
-    $("#P2").val(company.P2);
+    $("#tellus-address").val(company.Utdelningsadress[0].Gatuadress[0]._text + " " + company.Utdelningsadress[0].Postort[0]._text);
 }
 
 function showModal(){

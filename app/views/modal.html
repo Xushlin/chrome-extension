@@ -1,5 +1,5 @@
-<button type="button" id="open-dialog">Open Dialog</button>
-<button type="button" id="open-list-dialog">Open list Dialog</button>
+<!--<button type="button" id="open-dialog">Open Dialog</button>-->
+<!--<button type="button" id="open-list-dialog">Open list Dialog</button>-->
 <div id="ModalSearchResult" class="tellus-modal"  style="display:none">
     <div class="tellus-list-modal-wrapper">
         <div class="title-container">
@@ -15,8 +15,7 @@
 </div>
 
 <div id="ModalCompanyInfo" class="tellus-modal" style="display:none">
-   <input type="text" id="P1" hidden />
-   <input type="text" id="P2" hidden />
+   <input type="text" id="tellus-address" hidden />
    <input type="text" id="tellus-refresh-flag" value=true hidden />
    <div class="tellus-modal-wrapper">
        <div class="tellus-left-container">
@@ -116,22 +115,30 @@
         })
     });
 
-    function initialize() {
+    function initialize(location) {
         var mapProp = {
-            center:new google.maps.LatLng(document.getElementById("P1").value,document.getElementById("P2").value),
-            zoom: 5,
+            center:new google.maps.LatLng(location.lat(),location.lng()),
+            zoom: 17,
             mapTypeId: google.maps.MapTypeId.ROADMAP
         };
         new google.maps.Map(document.getElementById("googleMap"), mapProp);
     }
 
     var setIntervalId = setInterval(function checkValue() {
-        if (document.getElementById("P1").value !== '' && document.getElementById("P2").value !== '') {
+        if (document.getElementById("tellus-address").value !== undefined && document.getElementById("tellus-address").value !== '') {
             clearInterval(setIntervalId);
             setInterval(function(){
                 setTimeout(function () {
                     if($("#tellus-refresh-flag").val()==="true"){
-                        initialize();
+                        var geocoder = new google.maps.Geocoder();
+                        var address = document.getElementById("tellus-address").value;
+                        geocoder.geocode({'address': address}, function (results, status) {
+                            if (status == google.maps.GeocoderStatus.OK) {
+                                initialize(results[0].geometry.location);
+                            } else {
+                                alert("ERROR: Cannot find the following address: '" + address + "'");
+                            }
+                        });
                         $("#tellus-refresh-flag").val(false)
                     }
                 }, 1000);

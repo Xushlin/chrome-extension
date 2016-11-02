@@ -1,6 +1,7 @@
 var clickHandler = function(e) {
     chrome.tabs.query({active: true, currentWindow: true}, function (tabs) {
         getSearchResult(e,tabs);
+        //getCompanyInformation(e,tabs);
     });
 };
 
@@ -31,6 +32,28 @@ function getSearchResult(event,tabs) {
                 chrome.tabs.sendMessage(tabs[0].id, {action: "notification"});
             } else {
                 getHTMLTemplate(tabs, "dialog_searchResult", result);
+            }
+        },
+        error: function (err) {
+            console.log(err);
+            chrome.tabs.sendMessage(tabs[0].id, {action: "notification"});
+        }
+    })
+};
+
+function getCompanyInformation(event,tabs) {
+    $.ajax({
+        url: "../mock/GetKontoListResponse.txt",
+        contentType:"text/plain",
+        dataType:"text",
+        type: "get",
+        success: function (result) {
+            if (result === undefined || result === null) {
+                chrome.tabs.sendMessage(tabs[0].id, {action: "notification"});
+            } else {
+                var res= xmlToJSON.parseString(result);
+                console.log(res);
+                //getHTMLTemplate(tabs, "dialog_searchResult", result);
             }
         },
         error: function (err) {

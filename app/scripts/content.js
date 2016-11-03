@@ -85,7 +85,8 @@ function showModal(){
 }
 $(document).ready(function () {
     $("body").on("click", "#open-tellus", function () {
-        chrome.extension.sendMessage({action: 'open_new_tab'});
+        var query = $("#M1").text();
+        chrome.extension.sendMessage({action: 'open_new_tab', data: query});
     })
 
     $("body").on("click", ".tellus-list-container", function () {

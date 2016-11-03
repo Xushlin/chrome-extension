@@ -1,0 +1,29 @@
+<Login>
+<MethodParameters>
+<LoginResponse>
+<UserKey>f63ecf64-dd76-431f-aae7-acf04d5130c8</UserKey>
+<Webbanvandare>
+<WebbanvandareID>4bfb8603-cd18-e511-9213-005056b20fd4</WebbanvandareID>
+<KontaktpersonID>2c839c70-275b-e311-91f0-005056b20fd8</KontaktpersonID>
+<KontaktpersonNamn>Engström, Jimmy</KontaktpersonNamn>
+<MedlemsorganisationID>2fcd80f7-ff07-de11-b4e1-02bf9e69ca65</MedlemsorganisationID>
+<MedlemsorganisationNamn>Teknikföretagen</MedlemsorganisationNamn>
+<Anvandarnamn>jimmy.engstrom@svensktnaringsliv.se</Anvandarnamn>
+<BehorighetsNiva>Admin</BehorighetsNiva>
+<Bekraftad>True</Bekraftad>
+<KontoID>db020234-0108-de11-b4e1-02bf9e69ca65</KontoID>
+<KontoNamn>Föreningen Svenskt Näringsliv</KontoNamn>
+<MoGruppID>09cd80f7-ff07-de11-b4e1-02bf9e69ca65</MoGruppID>
+<MoGruppNamn>Föreningen Teknikföretagen i Sverige</MoGruppNamn>
+<SenastModifierad>2015-10-30 10:10:42</SenastModifierad>
+<Skapad>2015-06-22 12:54:19</Skapad>
+<Status>Aktiv</Status>
+<ApplicationName isNull="true"/>
+</Webbanvandare>
+<BehorighetsNiva>Admin</BehorighetsNiva>
+<ErrorCode>0</ErrorCode>
+<ErrorDescription isNull="false"/>
+<UserFriendlyErrorDescription isNull="false"/>
+</LoginResponse>
+</MethodParameters>
+</Login>

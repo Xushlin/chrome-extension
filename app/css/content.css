@@ -2,7 +2,6 @@
     text-align: left;
     font-family: 'Lato-Regular', serif;
 }
-
 @font-face {
 font-family: 'Lato-Regular';
 src:url('chrome-extension://__MSG_@@extension_id__/app/fonts/Lato-Regular.woff2');
@@ -33,12 +32,10 @@ src:url('chrome-extension://__MSG_@@extension_id__/app/fonts/Lato-Regular.woff2'
     padding-right: 30px;
 }
 .tellus-list-container:hover{border-left:8px solid #f08200; }
-
 .tellus-search-result-item{
     padding-left: 22px;
     font-weight:100;
     height: 80px;
-    /*float:left;*/
     display: inline;
     cursor: pointer;
     border-left: 8px solid white;
@@ -51,7 +48,6 @@ src:url('chrome-extension://__MSG_@@extension_id__/app/fonts/Lato-Regular.woff2'
 }
 .tellus-list-container .tellus-open-detail{display: none;}
 .tellus-list-container:hover .tellus-open-detail{display: block;}
-
 .tellus-close-list{
     font-size: 24px;
     height: 80px;
@@ -60,19 +56,31 @@ src:url('chrome-extension://__MSG_@@extension_id__/app/fonts/Lato-Regular.woff2'
     float: right;
     cursor: pointer;
 }
-
 .tellus-modal {
-    position: fixed;left: 0;top: 0;right: 0;bottom: 0;background: rgba(0,0,0,.5);
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,.5);
     font-family: 'Lato-Regular', serif;
     z-index: 999999999;
 }
 .tellus-list-modal-wrapper {
-    margin: 50px auto; width: 600px;min-height: 240px;
-    border: 0;background: white;box-shadow: 2px 3px 8px black;
+    margin: 50px auto;
+    width: 600px;
+    min-height: 240px;
+    border: 0;
+    background: white;
+    box-shadow: 2px 3px 8px black;
 }
 .tellus-modal-wrapper {
-    margin: 50px auto; width: 940px;height: 560px;
-    border: 0;background: white;box-shadow: 2px 3px 8px black;
+    margin: 50px auto;
+    width: 940px;
+    height: 560px;
+    border: 0;
+    background: white;
+    box-shadow: 2px 3px 8px black;
 }
 .tellus-left-container{
     width: 340px;
@@ -131,7 +139,6 @@ src:url('chrome-extension://__MSG_@@extension_id__/app/fonts/Lato-Regular.woff2'
     min-height: 80px;
     padding-top: 8px;
 }
-
 #tellus-right-sub-content-container .tellus-content-row .tellus-left{
     min-height: 60px;
     width: 260px;
@@ -157,10 +164,11 @@ src:url('chrome-extension://__MSG_@@extension_id__/app/fonts/Lato-Regular.woff2'
     font-size: 30px;
     font-weight: bold;
     display: block;
-    margin-bottom: -12px;
+    /*margin-bottom: -12px;*/
 }
 .tellus-info-title-sub {
     color:#C7C7C7;
+    display: block;
     font-size: 20px;
 }
 .tellus-info-field-title {

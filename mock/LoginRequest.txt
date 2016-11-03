@@ -1,0 +1,9 @@
+<Login>
+<MethodParameters>
+<request>
+<Anvandarnamn>jimmy.engstrom@svensktnaringsliv.se</Anvandarnamn>
+<Losenord>******</Losenord>
+<MedlemsorganisationID>2fcd80f7-ff07-de11-b4e1-02bf9e69ca65</MedlemsorganisationID>
+</request>
+</MethodParameters>
+</Login>

@@ -1,0 +1,26 @@
+<GetKontoList>
+<MethodParameters>
+<request>
+<MedlemsorganisationID isNull="true" />
+<EgenskapID isNull="true" />
+<SenastModifierad isNull="true" />
+<PageIndex>0</PageIndex>
+<PageSize>0</PageSize>
+<SortOrder>ASC</SortOrder>
+<SortBy>JuridisktNamn</SortBy>
+<Medlemsnummer isNull="false" />
+<Organisationsnummer isNull="false" />
+<Lopnummer isNull="false" />
+<InkluderaInaktivaPoster>False</InkluderaInaktivaPoster>
+<JuridisktNamn isNull="false" />
+<Marknadsnamn>*forefront*</Marknadsnamn>
+<UndergruppID isNull="true" />
+<Postort isNull="false" />
+<MOgruppID isNull="true" />
+<Lan isNull="false" />
+<KoncernmoderID isNull="true" />
+<KontokategoriID>0</KontokategoriID>
+<userkey>81bcfddf-5225-403c-a04c-23f77c4f4a3e</userkey>
+</request>
+</MethodParameters>
+</GetKontoList>

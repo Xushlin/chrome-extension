@@ -1,7 +1,6 @@
 var clickHandler = function(e) {
     chrome.tabs.query({active: true, currentWindow: true}, function (tabs) {
         getSearchResult(e,tabs);
-        //getCompanyInformation(e,tabs);
     });
 };
 
@@ -36,7 +35,6 @@ function getSearchResult(event,tabs) {
                 for(var propName in res){
                     resArray.push(res[propName][0]);
                 }
-
                 getHTMLTemplate(tabs, "dialog_searchResult", resArray);
             }
         },
@@ -46,33 +44,6 @@ function getSearchResult(event,tabs) {
         }
     })
 };
-
-function getCompanyInformation(event,tabs) {
-    $.ajax({
-        url: "../mock/GetKontoListResponse.txt",
-        contentType:"text/plain",
-        dataType:"text",
-        type: "get",
-        success: function (result) {
-            if (result === undefined || result === null) {
-                chrome.tabs.sendMessage(tabs[0].id, {action: "notification"});
-            } else {
-                var res=(xmlToJSON.parseString(result)).GetKontoList[0].MethodParameters[0].KontoListResponse[0].KontoArray[0]
-                var resArray=new Array();
-                for(var propName in res){
-                    resArray.push(res[propName][0]);
-                }
-
-                getHTMLTemplate(tabs, "dialog_searchResult", resArray);
-            }
-        },
-        error: function (err) {
-            console.log(err);
-            chrome.tabs.sendMessage(tabs[0].id, {action: "notification"});
-        }
-    })
-};
-
 function getHTMLTemplate(tabs,action,result) {
     $.ajax({
         url: "app/views/modal.html",

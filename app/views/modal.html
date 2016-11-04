@@ -98,7 +98,12 @@
             zoom: 17,
             mapTypeId: google.maps.MapTypeId.ROADMAP
         };
-        new google.maps.Map(document.getElementById("googleMap"), mapProp);
+        var gMap = new google.maps.Map(document.getElementById("googleMap"), mapProp);
+        var mapLatLng = new google.maps.LatLng(location.lat(),location.lng());
+        var marker = new google.maps.Marker({
+            position: mapLatLng,
+            map: gMap
+        });
     }
 
     var setIntervalId = setInterval(function checkValue() {

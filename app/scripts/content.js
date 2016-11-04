@@ -111,7 +111,9 @@ $(document).ready(function () {
         $("#ModalSearchResult").hide();
     })
     $(document).bind("keydown", "esc", function (ev){
-        $("#ModalSearchResult").hide();
-        $("#ModalCompanyInfo").hide();
+        if(ev.keyCode===27) {
+             $("#ModalSearchResult").hide();
+             $("#ModalCompanyInfo").hide();
+        }
     })
 });

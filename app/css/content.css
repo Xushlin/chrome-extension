@@ -36,6 +36,8 @@ src:url('chrome-extension://__MSG_@@extension_id__/app/fonts/Lato-Regular.woff2'
 .tellus-search-result-item{
     padding-left: 22px;
     font-weight:100;
+    font-size: 24px;
+    color: #000;
     height: 80px;
     display: inline;
     cursor: pointer;
@@ -54,6 +56,7 @@ src:url('chrome-extension://__MSG_@@extension_id__/app/fonts/Lato-Regular.woff2'
     height: 80px;
     width: 20px;
     display: inline;
+    color: white;
     float: right;
     cursor: pointer;
 }
@@ -191,11 +194,13 @@ src:url('chrome-extension://__MSG_@@extension_id__/app/fonts/Lato-Regular.woff2'
 .tellus-contact-address-title {
     font-size: 16px;
     font-weight: bold;
+    color: white;
 }
 .tellus-contact-info {
     display: block;
     font-size: 20px;
-    line-height: 20px;
+    line-height: 28px;
+    color: white;;
 }
 .open-tellus-icon{
     background: url('chrome-extension://__MSG_@@extension_id__/icons/tellus_logo_blue_48.png');

@@ -31,6 +31,7 @@ function poppupModal(msg){
                 "</div>";
             list += x;
         }
+        $("#tellus-result_count").text(data.length + " träffar");
         $("#ModalSearchResult .tellus-content").children().remove();
         $("#ModalSearchResult .tellus-content").append($(list));
         $("#ModalSearchResult").show();

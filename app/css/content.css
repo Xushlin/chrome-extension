@@ -35,10 +35,10 @@ src:url('chrome-extension://__MSG_@@extension_id__/app/fonts/Lato-Regular.woff2'
 .tellus-list-container:hover{border-left:8px solid #f08200; }
 .tellus-search-result-item{
     padding-left: 22px;
-    font-weight:100;
     font-size: 24px;
     color: #000;
     height: 80px;
+    line-height: 24px;
     display: inline;
     cursor: pointer;
     border-left: 8px solid white;

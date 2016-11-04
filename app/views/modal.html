@@ -1,7 +1,7 @@
 <div id="ModalSearchResult" class="tellus-modal"  style="display:none">
     <div class="tellus-list-modal-wrapper">
         <div class="tellus-title-container">
-            <span class="tellus-title">2 Content</span>
+            <span id="tellus-result_count" class="tellus-title">2 Content</span>
             <div id="close-list-container" class="tellus-close-list">X</div>
         </div>
         <div class="tellus-content">
@@ -10,32 +10,32 @@
 </div>
 
 <div id="ModalCompanyInfo" class="tellus-modal" style="display:none">
-   <input type="text" id="tellus-address" hidden />
+   <input type="text" id="tellus-bind-address" hidden />
    <input type="text" id="tellus-refresh-flag" value=true hidden />
    <div class="tellus-modal-wrapper">
        <div class="tellus-left-container">
             <div class="tellus-left-top">
-                <div id="googleMap" style="width:340px;height:220px;"></div>
+                <div id="tellus-googleMap" style="width:340px;height:220px;"></div>
             </div>
             <div class="tellus-left-bottom">
                 <span class="tellus-contact-address-title">Address</span>
-                <span id="A1" class="tellus-contact-info">Hollandargatan 13 111 36 Stockholm</span>
+                <span id="tellus-bind-A1" class="tellus-contact-info">Hollandargatan 13 111 36 Stockholm</span>
                 <br/>
                 <span class="tellus-contact-address-title">Kontaktuppgifter</span>
-                <span id="A2" class="tellus-contact-info">Växel</span>
-                <span id="A3" class="tellus-contact-info">info@ffcg.se</span>
-                <span id="A4" class="tellus-contact-info">08-410 600 00</span>
+                <span id="tellus-bind-A2" class="tellus-contact-info">Växel</span>
+                <span id="tellus-bind-A3" class="tellus-contact-info">info@ffcg.se</span>
+                <span id="tellus-bind-A4" class="tellus-contact-info">08-410 600 00</span>
                 <span class="tellus-contact-info">----</span>
-                <span id="A5" class="tellus-contact-info">Johan Pettersson (VD)</span>
-                <span id="A6" class="tellus-contact-info">johan.pettersson@ffcg.se</span>
-                <span id="A7" class="tellus-contact-info">+46 701 234 567</span>
+                <span id="tellus-bind-A5" class="tellus-contact-info">Johan Pettersson (VD)</span>
+                <span id="tellus-bind-A6" class="tellus-contact-info">johan.pettersson@ffcg.se</span>
+                <span id="tellus-bind-A7" class="tellus-contact-info">+46 701 234 567</span>
             </div>
        </div>
        <div class="tellus-right-container">
             <div id="tellus-right-sub-top-container">
                 <div id="company">
-                    <label id="M1" class="tellus-info-title">Forefront Consulting Group</label>
-                    <label id="M2" class="tellus-info-title-sub" >Aktiebolag</label>
+                    <label id="tellus-bind-M1" class="tellus-info-title">Forefront Consulting Group</label>
+                    <label id="tellus-bind-M2" class="tellus-info-title-sub" >Aktiebolag</label>
                 </div>
                 <div id="close-container">X</div>
             </div>
@@ -43,43 +43,43 @@
                 <div class="tellus-content-row">
                     <div class="tellus-left">
                         <span class="tellus-info-field-title">Bransch</span>
-                        <label id="M3" class="tellus-info-field">IT</label>
+                        <label id="tellus-bind-M3" class="tellus-info-field">IT</label>
                     </div>
                     <div class="tellus-right">
                         <span class="tellus-info-field-title">Medlemsorganisation</span>
-                        <label id="M4" class="tellus-info-field">Almega</label>
+                        <label id="tellus-bind-M4" class="tellus-info-field">Almega</label>
                     </div>
                 </div>
                 <div class="tellus-content-row">
                     <div class="tellus-left">
                         <span class="tellus-info-field-title">Registreringsär</span>
-                        <label id="M5" class="tellus-info-field">2008</label>
+                        <label id="tellus-bind-M5" class="tellus-info-field">2008</label>
                     </div>
                     <div class="tellus-right">
                         <span class="tellus-info-field-title">Medlem sedan</span>
-                        <label id="M6" class="tellus-info-field">2008-11-09</label>
+                        <label id="tellus-bind-M6" class="tellus-info-field">2008-11-09</label>
                     </div>
                 </div>
                 <div class="tellus-content-row">
                     <div class="tellus-left">
                         <span class="tellus-info-field-title">Lönesumma (TKR)</span>
-                        <label id="M7" class="tellus-info-field">99 050</label>
+                        <label id="tellus-bind-M7" class="tellus-info-field">99 050</label>
                     </div>
                     <div class="tellus-right">
                         <span class="tellus-info-field-title">Kollektivavtal</span>
-                        <label id="M8" class="tellus-info-field">Tjänstemannaavtalet Annat avtal</label>
+                        <label id="tellus-bind-M8" class="tellus-info-field">Tjänstemannaavtalet Annat avtal</label>
                     </div>
                 </div>
                 <div class="tellus-content-row">
                     <div class="tellus-left">
                         <span class="tellus-info-field-title">Anställda</span>
-                        <label id="M9" class="tellus-info-field">180</label>
+                        <label id="tellus-bind-M9" class="tellus-info-field">180</label>
                     </div>
                 </div>
                 <div class="tellus-content-row">
                     <div class="tellus-left">
                         <span class="tellus-info-field-title">Storleksklass</span>
-                        <label id="M10" class="tellus-info-field-5">5</label>
+                        <label id="tellus-bind-M10" class="tellus-info-field-5">5</label>
                     </div>
                 </div>
             </div>
@@ -98,25 +98,25 @@
             zoom: 13,
             mapTypeId: google.maps.MapTypeId.ROADMAP
         };
-        var gMap = new google.maps.Map(document.getElementById("googleMap"), mapProp);
+        var gMap = new google.maps.Map(document.getElementById("tellus-googleMap"), mapProp);
         var mapLatLng = new google.maps.LatLng(location.lat(),location.lng());
         var marker = new google.maps.Marker({
             position: mapLatLng,
             //draggable: true,
             animation: google.maps.Animation.DROP,
             map: gMap,
-            title:document.getElementById("M1").textContent
+            title:document.getElementById("tellus-bind-M1").textContent
         });
     }
 
     var setIntervalId = setInterval(function checkValue() {
-        if (document.getElementById("tellus-address").value !== undefined && document.getElementById("tellus-address").value !== '') {
+        if (document.getElementById("tellus-bind-address").value !== undefined && document.getElementById("tellus-bind-address").value !== '') {
             clearInterval(setIntervalId);
             setInterval(function(){
                 setTimeout(function () {
                     if(document.getElementById("tellus-refresh-flag").value ==="true"){
                         var geocoder = new google.maps.Geocoder();
-                        var address = document.getElementById("tellus-address").value;
+                        var address = document.getElementById("tellus-bind-address").value;
                         geocoder.geocode({'address': address}, function (results, status) {
                             if (status == google.maps.GeocoderStatus.OK) {
                                 initialize(results[0].geometry.location);

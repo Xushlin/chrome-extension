@@ -111,6 +111,7 @@ src:url('chrome-extension://__MSG_@@extension_id__/app/fonts/Lato-Regular.woff2'
     background-color: #32424F;
     padding: 20px;
     color: white;
+    box-sizing: border-box;
 }
 #tellus-right-sub-top-container{
     height: 60px;

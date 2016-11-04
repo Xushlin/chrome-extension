@@ -166,6 +166,7 @@ src:url('chrome-extension://__MSG_@@extension_id__/app/fonts/Lato-Regular.woff2'
 .tellus-info-title {
     color:black;
     font-size: 30px;
+    line-height: 34px;
     font-weight: bold;
     display: block;
     /*margin-bottom: -12px;*/
@@ -174,10 +175,12 @@ src:url('chrome-extension://__MSG_@@extension_id__/app/fonts/Lato-Regular.woff2'
     color:#C7C7C7;
     display: block;
     font-size: 20px;
+    line-height: 20px;
 }
 .tellus-info-field-title {
     color:#4B4B4B;
     font-size: 16px;
+    line-height: 16px;
     display: block;
     margin-bottom: 10px;
     font-weight: bold;
@@ -185,11 +188,13 @@ src:url('chrome-extension://__MSG_@@extension_id__/app/fonts/Lato-Regular.woff2'
 .tellus-info-field {
     color: black;
     font-size: 24px;
+    line-height: 24px;
 }
 .tellus-info-field-5{
     color: black;
     margin-top: 10px;
     font-size: 50px;
+    line-height: 50px;
 }
 .tellus-contact-address-title {
     font-size: 16px;
@@ -203,7 +208,7 @@ src:url('chrome-extension://__MSG_@@extension_id__/app/fonts/Lato-Regular.woff2'
     color: white;;
 }
 .open-tellus-icon{
-    background: url('chrome-extension://__MSG_@@extension_id__/icons/tellus_logo_blue_48.png');
+    background: url('chrome-extension://__MSG_@@extension_id__/icons/tellus_logo_white_48.png');
     width: 48px;
     height: 48px;
     margin-left: 40px;

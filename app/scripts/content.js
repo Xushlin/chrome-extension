@@ -13,8 +13,8 @@ function poppupModal(msg){
         var modal = document.createElement('div');
         modal.id = "tellus";
         if ($("#tellus").length == 0) {
-        //<script src='https://maps.googleapis.com/maps/api/js?key=AIzaSyB0OJ6iAlKgFFghRemcZwSPsz28QstBqr4'></script>
-            modal.innerHTML = "<script src='http://maps.googleapis.com/maps/api/js?key=AIzaSyChclkHzG_gqZCKEILnfPbI_HFIrZV47hc'></script>" + msg.html;
+            //modal.innerHTML="<script src='https://maps.googleapis.com/maps/api/js?key=AIzaSyB0OJ6iAlKgFFghRemcZwSPsz28QstBqr4'></script>"+msg.html; //SV
+            modal.innerHTML = "<script src='https://maps.googleapis.com/maps/api/js?key=AIzaSyChclkHzG_gqZCKEILnfPbI_HFIrZV47hc'></script>" + msg.html;//CN
         } else {
             modal.innerHTML = msg.html;
         }

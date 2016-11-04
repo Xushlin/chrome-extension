@@ -56,6 +56,3 @@ function getHTMLTemplate(tabs,action,result) {
         }
     })
 };
-function login(username, password){
-
-}

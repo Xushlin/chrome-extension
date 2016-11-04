@@ -17,6 +17,7 @@ src:url('chrome-extension://__MSG_@@extension_id__/app/fonts/Lato-Regular.woff2'
 }
 #ModalSearchResult .tellus-title-container .tellus-title{
     font-size: 34px;
+    color: white;
 }
 #ModalSearchResult .tellus-tellus-content{
     max-height: 320px;
@@ -194,6 +195,7 @@ src:url('chrome-extension://__MSG_@@extension_id__/app/fonts/Lato-Regular.woff2'
 .tellus-contact-info {
     display: block;
     font-size: 20px;
+    line-height: 20px;
 }
 .open-tellus-icon{
     background: url('chrome-extension://__MSG_@@extension_id__/icons/tellus_logo_blue_48.png');

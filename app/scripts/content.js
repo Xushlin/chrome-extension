@@ -60,26 +60,26 @@ function sendNotification(message){
     });
 }
 function bindModal(company){
-    $("#M1").text(company.JuridisktNamn[0]._text);
-    $("#M2").text(company.M2);
-    $("#M3").text(company.M3);
-    $("#M4").text(company.M4);
-    $("#M5").text(company.M5);
-    $("#M6").text(company.M6);
-    $("#M7").text(company.M7);
-    $("#M8").text(company.M8);
-    $("#M9").text(company.M9);
-    $("#M10").text(company.M10);
+    $("#tellus-bind-M1").text(company.JuridisktNamn[0]._text);
+    $("#tellus-bind-M2").text(company.M2);
+    $("#tellus-bind-M3").text(company.M3);
+    $("#tellus-bind-M4").text(company.M4);
+    $("#tellus-bind-M5").text(company.M5);
+    $("#tellus-bind-M6").text(company.M6);
+    $("#tellus-bind-M7").text(company.M7);
+    $("#tellus-bind-M8").text(company.M8);
+    $("#tellus-bind-M9").text(company.M9);
+    $("#tellus-bind-M10").text(company.M10);
 
-    $("#A1").text(company.Utdelningsadress[0].Gatuadress[0]._text + " " + company.Utdelningsadress[0].Postnummer[0]._text + " " + company.Utdelningsadress[0].Postort[0]._text);
-    $("#A2").text(company.A2);
-    $("#A3").text(company.Epost[0]._text);
-    $("#A4").text(company.TelefonVaxel[0]._text);
-    $("#A5").text(company.A5);
-    $("#A6").text(company.EpostPDFfaktura[0]._text);
-    $("#A7").text(company.A7);
+    $("#tellus-bind-A1").text(company.Utdelningsadress[0].Gatuadress[0]._text + " " + company.Utdelningsadress[0].Postnummer[0]._text + " " + company.Utdelningsadress[0].Postort[0]._text);
+    $("#tellus-bind-A2").text(company.A2);
+    $("#tellus-bind-A3").text(company.Epost[0]._text);
+    $("#tellus-bind-A4").text(company.TelefonVaxel[0]._text);
+    $("#tellus-bind-A5").text(company.A5);
+    $("#tellus-bind-A6").text(company.EpostPDFfaktura[0]._text);
+    $("#tellus-bind-A7").text(company.A7);
 
-    $("#tellus-address").val(company.Utdelningsadress[0].Gatuadress[0]._text + " " + company.Utdelningsadress[0].Postort[0]._text);
+    $("#tellus-bind-address").val(company.Utdelningsadress[0].Gatuadress[0]._text + " " + company.Utdelningsadress[0].Postort[0]._text);
 }
 function showModal(){
     $("#tellus-refresh-flag").val(true)
